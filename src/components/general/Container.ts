@@ -6,7 +6,7 @@ export const Container = styled("div")`
   position: relative;
   height: 100%;
   @media(max-width: 1600px){
-    width: 80%;
+    width: 65%;
   }
   @media(max-width: 600px){
     width:95%;

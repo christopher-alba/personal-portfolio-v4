@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import About from "../components/About";
 import Journey from "../components/Journey";
 import Landing from "../components/Landing";
+import Projects from "../components/Projects";
 
 const Page: FC = () => {
   return (
@@ -9,6 +10,7 @@ const Page: FC = () => {
       <Landing />
       <About />
       <Journey />
+      <Projects />
     </>
   );
 };

@@ -17,6 +17,7 @@ export const ButtonPrimary = styled("button")`
 export const ButtonSecondary = styled("button")`
   padding: 10px 40px;
   margin-top: 20px;
+  border-radius: 10px;
   background: transparent;
   transition: 300ms;
   border: 2px solid ${({ theme }) => theme.colors.secondary};
@@ -65,6 +66,7 @@ export const ButtonPlain = styled("button")`
   transition: 300ms;
   color: ${({ theme }) => theme.colors.secondary};
   border: none;
+  border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
   &:hover {

@@ -20,7 +20,7 @@ export const Headshot = styled(ReactComponent)`
   height: 110%;
   width: auto;
   color: ${({ theme }) => theme.colors.primary};
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 `;
@@ -31,7 +31,7 @@ export const ContentWrapper = styled("div")`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     justify-content: center;
   }
 `;
@@ -94,7 +94,7 @@ export const Professional = styled("h3")`
   color: ${({ theme }) => theme.colors.primary};
   margin: 0;
   margin-left: 10px;
-  font-weight: 100;
+  font-weight: 300;
   @media (max-width: 800px) {
     font-size: 0.75rem;
   }
