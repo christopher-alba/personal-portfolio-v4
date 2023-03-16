@@ -7,11 +7,14 @@ export type Company = {
   technologies: string[];
   bulletpoints: string[];
   website: string;
+  summary: string;
 };
 export type Companies = Company[];
 
 export const data: Companies = [
   {
+    summary:
+      "At Turners, I started as part time as a Software Engineer during my final year of university. My contract then moved to full time when I completed my studies. I began working in the QA space, and eventually transitioned into a developer role. There are multiple technologies being used at Turners, making my trait of being platform agnostic to be highly valuable.",
     type: "Work",
     name: "Turners Automotive Group",
     nameShort: "TAG",
@@ -39,6 +42,8 @@ export const data: Companies = [
     website: "https://www.turnersautogroup.co.nz/",
   },
   {
+    summary:
+      "I joined Henry Schein in my penultimate year of university as an intern. Working mainly in C#, I designed and developed web applications, doing both the frontend and backend. After each piece of work, I would present what I've accomplished to a large audience online, where I would receive constructive feedback on my work.",
     type: "Internship",
     name: "Henry Schein One",
     nameShort: "HSO",
@@ -66,6 +71,8 @@ export const data: Companies = [
     website: "https://henryscheinone.co.nz/",
   },
   {
+    summary:
+      "I joined Jasper as an intern in my second year of university. Here I worked primarily in Javascript, specifically in the frontend of a React application. Here they adopted GraphQL to make API calls to their server instead of REST, which was an interesting technology for me to learn. This was my first job in the IT industry.",
     type: "Internship",
     name: "Jasper",
     nameShort: "Jasper",
@@ -103,6 +110,8 @@ export const data: Companies = [
     website: "https://www.jasper.io/",
   },
   {
+    summary:
+      "This bootcamp was an intense software development course that involved 800 hours of development work. This was where I gained a large portion of my foundational skills as a software developer.",
     type: "Bootcamp",
     name: "Enspiral Dev Academy",
     nameShort: "EDA",
