@@ -1,8 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  body {
+  #root-wrapper{
     overflow-x:hidden;
+  }
+  body {
     background: ${({ theme }) => theme.colors.primary};
     background-position: center;
     background-repeat: no-repeat;
