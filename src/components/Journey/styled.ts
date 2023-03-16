@@ -11,7 +11,7 @@ export const CompanyWrapper = styled("div")`
   margin-bottom: 100px;
   display: flex;
   flex-wrap: nowrap;
-  @media(max-width:600px){
+  @media (max-width: 600px) {
     flex-direction: column;
     align-items: center;
   }
@@ -47,6 +47,7 @@ export const Date = styled("h3")`
 `;
 
 export const TextContentWrapper = styled("div")`
+  flex-grow: 1;
   margin-left: 150px;
   width: 60%;
   position: relative;
