@@ -28,6 +28,22 @@ export const ButtonSecondary = styled("button")`
   }
 `;
 
+export const ButtonYoutube = styled("button")`
+  position: relative;
+  padding: 10px 40px;
+  background: transparent;
+  border: 2px solid ${({theme}) => theme.colors.secondary};
+  border-radius: 10px;
+  color: ${({theme}) => theme.colors.secondary};
+  transition: 300ms;
+  margin-top: 30px;
+  cursor: pointer;
+  &:hover {
+    background: ${({theme}) => theme.colors.secondary};
+    color: ${({theme}) => theme.colors.tertiarySub};
+  }
+`;
+
 export const ButtonTheme = styled("button")`
   padding: 10px 40px;
   white-space: nowrap;
