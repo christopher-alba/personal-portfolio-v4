@@ -14,6 +14,7 @@ import {
 } from "./styled";
 import { data as companies } from "./data";
 import { Pill, TechnologyWrapper } from "../general/Pills";
+import LearnMore from "./LearnMore";
 const Journey: FC = () => {
   return (
     <Background>
@@ -32,14 +33,17 @@ const Journey: FC = () => {
                 ""
               )}
               <TextContentWrapper>
-                <a
-                  href={companyObj.website}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
-                  <CompanyName>{companyObj.name}</CompanyName>
-                </a>
+                <LearnMore
+                  companyObj={companyObj}
+                  tooltip={
+                    "Learn more about my experience at " + companyObj.nameShort
+                  }
+                />
+                <CompanyName>
+                  <a href={companyObj.website} target="_blank" rel="noreferrer">
+                    {companyObj.name}
+                  </a>
+                </CompanyName>
                 <Role>{companyObj.position}</Role>
                 <Date>{companyObj.dateString}</Date>
                 <p>{companyObj.summary}</p>

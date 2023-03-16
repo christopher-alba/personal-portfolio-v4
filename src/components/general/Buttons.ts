@@ -32,15 +32,15 @@ export const ButtonYoutube = styled("button")`
   position: relative;
   padding: 10px 40px;
   background: transparent;
-  border: 2px solid ${({theme}) => theme.colors.secondary};
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
   border-radius: 10px;
-  color: ${({theme}) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   transition: 300ms;
   margin-top: 30px;
   cursor: pointer;
   &:hover {
-    background: ${({theme}) => theme.colors.secondary};
-    color: ${({theme}) => theme.colors.tertiarySub};
+    background: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.tertiarySub};
   }
 `;
 
@@ -62,12 +62,12 @@ export const ButtonTheme = styled("button")`
 
 export const ButtonPlain = styled("button")`
   background: none;
+  transition: 300ms;
   color: ${({ theme }) => theme.colors.secondary};
-  border: 2px solid ${({ theme }) => theme.colors.secondary};
+  border: none;
   padding: 10px 20px;
   cursor: pointer;
   &:hover {
-    background: ${({ theme }) => theme.colors.secondary};
-    color: ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.primarySub};
   }
 `;

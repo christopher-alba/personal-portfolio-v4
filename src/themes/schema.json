@@ -28,7 +28,7 @@
             "primaryTransparent": "rgba(0,0,0,0.8)",
             "secondaryTransparent": "rgba(255,255,255,0.8)",
             "tertiaryTransparent": "rgba(48, 119, 255,0.8)",
-            "primarySub": "#949494",
+            "primarySub": "#262626",
             "secondarySub": "#F8F8F8",
             "tertiarySub": "#001744"
         }

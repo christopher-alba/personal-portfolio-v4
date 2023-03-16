@@ -23,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
           return "#2e2e2e";
         }
       }};
+      
     }
 
     &::-webkit-scrollbar
@@ -38,21 +39,15 @@ export const GlobalStyles = createGlobalStyle`
     }
     &::-webkit-scrollbar-thumb
       {
-          background-color: ${({ theme }) => {
+          background-color: ${({ theme }) => theme.colors.tertiary};;
+          border-radius:10px;
+          border: 3px solid ${({ theme }) => {
             if (theme.name === "dark") {
-              return "#d4d4d4";
-            } else {
-              return "black";
-            }
-          }};
-          border: 2px solid ${({ theme }) => {
-            if (theme.name === "dark") {
-              return "#d4d4d4";
+              return "#F5F5F5";
             } else {
               return "#2e2e2e";
             }
-          }};;
-          border-radius:10px;
+          }};
       }
   }
   button {
