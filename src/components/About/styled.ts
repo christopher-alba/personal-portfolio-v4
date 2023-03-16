@@ -28,6 +28,12 @@ export const Emphasise = styled("span")`
 
 export const TextWrapper = styled("div")`
   max-width: 50%;
+  @media(max-width:1000px){
+    max-width: 80%;
+  }
+  @media(max-width: 600px){
+    max-width: 100%;
+  }
 `;
 
 export const Skyline = styled(SkylineSVG)`
