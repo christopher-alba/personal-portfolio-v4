@@ -12,6 +12,10 @@ const ButtonPlainStyled = styled(ButtonPlain)`
   top: 0;
   right: 0;
   display: inline-block;
+  @media (max-width: 1100px) {
+    position: relative;
+    width: 100%;
+  }
 `;
 const TooltipText = styled("span")`
   visibility: hidden;
@@ -91,6 +95,13 @@ const ModalContent = styled("div")`
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  @media(max-width:600px){
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
 `;
 
 const StyledButtonPlain = styled(ButtonPlain)`

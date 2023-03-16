@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { ReactComponent as WorkIconSVG } from "../../assets/icons/workIcon.svg";
 import { ReactComponent as InternshipIconSVG } from "../../assets/icons/internshipIcon.svg";
 import { ReactComponent as BootcampIconSVG } from "../../assets/icons/bootcampIcon.svg";
-import { ButtonPlain } from "../general/Buttons";
-import LearnMore from "./LearnMore";
 
 export const Background = styled("div")`
   padding-top: 100px;
@@ -13,6 +11,10 @@ export const CompanyWrapper = styled("div")`
   margin-bottom: 100px;
   display: flex;
   flex-wrap: nowrap;
+  @media(max-width:600px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const CompanyName = styled("h1")`
@@ -48,6 +50,14 @@ export const TextContentWrapper = styled("div")`
   margin-left: 150px;
   width: 60%;
   position: relative;
+  @media (max-width: 1100px) {
+    width: 80%;
+    margin-left: 50px;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-left: 0;
+  }
 `;
 export const WorkIcon = styled(WorkIconSVG)`
   color: ${({ theme }) => theme.colors.tertiary};
