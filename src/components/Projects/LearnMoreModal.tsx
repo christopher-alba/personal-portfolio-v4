@@ -199,7 +199,6 @@ const LearnMoreModal: FC<{ projectObj: Project }> = ({ projectObj }) => {
   const [visibleProject, setVisibleProject] = useState(false);
   useEffect(() => {
     window.onclick = (e) => {
-      console.log(e);
       if (e.target == document.getElementById("projectModalBackground")) {
         console.log(visibleProject);
         setVisibleProject(false);
@@ -207,7 +206,6 @@ const LearnMoreModal: FC<{ projectObj: Project }> = ({ projectObj }) => {
     };
     window.onscroll = () => {
       setVisibleProject(false);
-      console.log("testing");
     };
   }, [visibleProject]);
   const hide = () => {

@@ -8,7 +8,7 @@ import { Background } from "./styled";
 
 const Contact: FC = () => {
   return (
-    <Background>
+    <Background id="contact">
       <Container>
         <Title number={4} text="Ready to download my CV?" />
         <p>

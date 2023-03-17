@@ -17,7 +17,7 @@ import { Pill, TechnologyWrapper } from "../general/Pills";
 import LearnMore from "./LearnMore";
 const Journey: FC = () => {
   return (
-    <Background>
+    <Background id="journey">
       <Container>
         <Title number={2} text="My Journey in Tech" />
         {companies.map((companyObj) => {

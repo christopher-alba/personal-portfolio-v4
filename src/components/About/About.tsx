@@ -13,7 +13,7 @@ import {
 
 const About: FC = () => {
   return (
-    <Background>
+    <Background id="about">
       <Skyline />
       <Container>
         <Title number={1} text="About Me" />

@@ -19,7 +19,7 @@ import {
 
 const Landing: FC = () => {
   return (
-    <Background>
+    <Background id="landing">
       <Container>
         <Headshot />
         <ContentWrapper>

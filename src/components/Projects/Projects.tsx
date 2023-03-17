@@ -17,7 +17,7 @@ import LearnMoreModal from "./LearnMoreModal";
 
 const Projects: FC = () => {
   return (
-    <Background>
+    <Background id="projects">
       <Container>
         <Title number={3} text="Personal Projects" />
         <p>

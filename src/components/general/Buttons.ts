@@ -49,12 +49,13 @@ export const ButtonTheme = styled("button")`
   padding: 10px 40px;
   white-space: nowrap;
   background: transparent;
-  border: 2px solid ${({ theme }) => theme.colors.tertiaryTransparent};
+  border-radius: 10px;
+  border: 2px solid ${({ theme }) => theme.colors.secondaryTransparent};
   transition: 300ms;
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
   &:hover {
-    background: ${({ theme }) => theme.colors.tertiaryTransparent};
+    background: ${({ theme }) => theme.colors.secondaryTransparent};
   }
   @media (max-width: 700px) {
     width: 100%;
