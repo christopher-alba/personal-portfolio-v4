@@ -51,17 +51,24 @@ const Landing: FC = () => {
             </ButtonWrapper>
           </div>
         </ContentWrapper>
-        <div
+        <button
           style={{
             position: "absolute",
             bottom: 0,
             display: "flex",
+            background: "none",
+            border: "none",
             width: "100%",
             justifyContent: "center",
           }}
+          onClick={() => {
+            document
+              .getElementById("about")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
         >
           <ArrowDown />
-        </div>
+        </button>
       </Container>
     </Background>
   );

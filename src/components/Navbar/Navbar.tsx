@@ -17,7 +17,7 @@ const Navbar: FC<{ setTheme: Function }> = ({ setTheme }) => {
     window.addEventListener("scroll", () => {
       const navbar = document.getElementById("Navbar") as HTMLElement;
       let currentScrollPos = window.scrollY;
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollpos < currentScrollPos) {
         navbar.style.opacity = "0";
       } else {
         navbar.style.opacity = "1";
