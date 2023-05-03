@@ -13,11 +13,11 @@ const Contact: FC = () => {
         <Title number={4} text="Ready to download my CV?" />
         <p>
           <Emphasise>
-            <strong>I'm not currently looking for any new opportunities</strong>
+            <strong>I'm currently looking for part time opportunities</strong>
           </Emphasise>{" "}
-          in software engineering. However, if you really want to have a chat,
-          feel free to contact me and I'll entertain your call, email or
-          message. Find the information you need to contact me in my CV.
+          in software engineering. Free to contact me and I'll entertain your
+          call, email or message. Find the information you need to contact me in
+          my CV.
         </p>
         <StyledLink
           to="./cv.pdf"
